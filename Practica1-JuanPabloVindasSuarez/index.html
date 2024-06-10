@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital General San Lucas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Opcional: Incluir Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Hospital General San Lucas</h1>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#about">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team">Equipo Médico</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#facilities">Instalaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+
+
+    <main class="container">
+        <section id="about" class="my-4">
+            <h2>Sobre Nosotros</h2>
+            <p>El Hospital General San Lucas es un centro de salud dedicado a proporcionar la mejor atención médica con
+                un equipo de profesionales altamente capacitados para sus necesidades.</p>
+            <ul>
+                <li><strong>Dirección:</strong> Avenida de la Salud, 123, San José, Costa Rica</li>
+                <li><strong>Teléfono:</strong> +506 2456 7890</li>
+                <li><strong>Correo Electrónico:</strong> consultorioSA@hospitalgeneralsanlucas.com</li>
+                <li><strong>Horario de Atención:</strong> Lunes a Viernes, 8:00 AM - 8:00 PM</li>
+            </ul>
+            <img src="https://images.squarespace-cdn.com/content/v1/58827f72b8a79b7d005dd7f1/1551450677091-C9QSO2ON4SI7VQIR23HN/Logo+San+Lucas.png" alt="Hospital General San Lucas" class="img-fluid">
+        </section>
+
+        <section id="services" class="my-4">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Medicina General</li>
+                <li>Pediatría</li>
+                <li>Cardiología</li>
+                <li>Neurología</li>
+                <li>Traumatología</li>
+                <li>Ginecología</li>
+                <li>Odontología</li>
+            </ul>
+            <img src="https://www.uv.mx/csalud/files/2013/02/becas-mexico-2019-apoyos-especialidad-medica-conacyt.jpg" alt="Servicios" class="img-fluid">
+        </section>
+
+        <section id="team" class="my-4">
+            <h2>Equipo Médico</h2>
+            <ul>
+                <li><strong>Dr. Juan Pérez</strong> - Director General</li>
+                <li><strong>Dra. Ana Martínez</strong> - Jefa de Pediatría</li>
+                <li><strong>Dr. Carlos López</strong> - Cardiólogo</li>
+                <li><strong>Dra. María García</strong> - Neuróloga</li>
+                <li><strong>Dr. Luis Fernández</strong> - Traumatólogo</li>
+                <li><strong>Dra. Laura Sánchez</strong> - Ginecóloga</li>
+                <li><strong>Dr. Miguel Torres</strong> - Odontólogo</li>
+            </ul>
+            <img src="https://cdn.lecturio.com/assets/Featured-image-Student-Blog-Hospital-Team.jpg" alt="Equipo Médico" class="img-fluid">
+        </section>
+
+        <section id="facilities" class="my-4">
+            <h2>Instalaciones</h2>
+            <ul>
+                <li><strong>Consultorios:</strong> 10 consultorios modernos al redodor del país</li>
+                <li><strong>Salas de Urgencias:</strong> 7 salas equipadas con tecnología avanzada</li>
+                <li><strong>Laboratorio:</strong> Completo y equipado para diversas pruebas</li>
+                <li><strong>Área de Radiología:</strong> Equipos de última generación</li>
+                <li><strong>Farmacia:</strong> Servicio de farmacia dentro del hospital</li>
+            </ul>
+            <img src="https://grupoors.com.mx/wp-content/uploads/2020/11/1200x628-Quirofano-2.png" alt="Instalaciones" class="img-fluid">
+        </section>
+
+        <section id="contact" class="my-4">
+            <h2>Contacto</h2>
+            <form action="/submit" method="post" class="form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="text-center bg-beige text-blue py-3">
+
+        <p>&copy; 2024 Hospital General San Lucas. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
